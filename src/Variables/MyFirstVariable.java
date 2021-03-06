@@ -19,14 +19,17 @@ public class MyFirstVariable {
         int fahrenheit = 61;
         double conversionc = (double) ((celsius * 9/5)+32);
         double conversionf = (double) ((fahrenheit-32)*5/9);
-        //System.out.println(myFirstVariable);//
-        //System.out.print("20 ");//
-       // System.out.print(solidNumber + " ");//
-        //System.out.print(mySecondVariable *2 + " ");//
-        //System.out.print(10+10+" ");//
-       // System.out.println(mySecondVariable + mySecondVariable);//
-        //System.out.println(myTotal);//
-       // System.out.println(calculation);//
+        boolean isAgeAboveTen=true;
+        String myName="Kasean Barber";
+        String sentenceBuilder = "My name is ";
+       System.out.println(myFirstVariable);
+        System.out.print("20 ");
+        System.out.print(solidNumber + " ");
+        System.out.print(mySecondVariable *2 + " ");
+        System.out.print(10+10+" ");
+        System.out.println(mySecondVariable + mySecondVariable);
+        System.out.println(myTotal);
+        System.out.println(calculation);
         System.out.println("Integer min value = "+minIntValue);
         System.out.println("Integer max value = "+maxIntValue);
         System.out.println(minLongValue);
@@ -34,5 +37,7 @@ public class MyFirstVariable {
         System.out.println(someNumber);
         System.out.println(conversionc+"F");
         System.out.println(conversionf+"C");
+        System.out.println(isAgeAboveTen);
+        System.out.println(sentenceBuilder+myName);
     }
 }
