@@ -11,6 +11,8 @@ public class Operators {
         x/=10;
         int operatorNumber=10;
         int operandNumber=97;
+        int someNumber= 9;
+        int otherNumber = 5;
         operandNumber+=operatorNumber;
         operandNumber-=operatorNumber;
         operandNumber*=operatorNumber;
@@ -18,6 +20,10 @@ public class Operators {
         System.out.println(x);
         System.out.println(operandNumber);
         boolean isLearning = true;
+        boolean waterOn = true;
+        int testNumber=31;
+        int aNewNumber = 6;
+        int someOtherNumber = 13;
         if(isLearning){
             System.out.println("Yes!");
             int port=8;
@@ -29,5 +35,60 @@ public class Operators {
             }
         }
 
-    }
-}
+        if(someNumber == otherNumber) {
+            System.out.println("They are equal");
+        }
+        if(someNumber != otherNumber) {
+            System.out.println("They are not equal");
+        }
+        if(!waterOn){
+            System.out.println("Water is not flowing.");
+        }
+        int aNumber = 5;
+        int anotherNumber = 20;
+        if(aNumber < anotherNumber && aNumber > 2){
+            System.out.println("The number is between 2 and 20");
+        }
+        if(testNumber<40 && testNumber>3){
+            System.out.println("True");
+        }
+        if(!(testNumber>1 && testNumber<50)){
+            System.out.println("False");
+        }
+        if(testNumber>33 && testNumber<45){
+            System.out.println("True");
+        }
+        if(testNumber!=33){
+            testNumber = 33;
+            System.out.println(testNumber);
+        }
+        if(aNewNumber <5 || someOtherNumber> 5){
+            System.out.println("My condition has been satisfied");
+        }
+        int value1=20;
+        int value2=35;
+        if(value1<20 || value2<20){
+            System.out.println("True.");
+        }
+        if(value1>30 && value2>30){
+            System.out.println("Both values are above 30.");
+        }
+        if(value1!=value2){
+            System.out.println("Values 1 and 2 are not equal.");
+        }
+        boolean isDriving = false;
+        boolean isMoving = isDriving ? true:false;
+        if(isMoving){
+            System.out.println("Is moving is true.");
+        }
+        boolean isItTheSink = waterOn ? true:false;
+        if(!isItTheSink){
+            System.out.println("Good work");}
+        else{
+            System.out.println("Go turn off the water");
+        }
+
+        }
+
+ }
+
