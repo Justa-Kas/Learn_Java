@@ -24,7 +24,8 @@ public class Operators {
         int testNumber=31;
         int aNewNumber = 6;
         int someOtherNumber = 13;
-        if(isLearning){
+        int examGrade;
+        /*if(isLearning){
             System.out.println("Yes!");
             int port=8;
             if (port==5) {
@@ -86,9 +87,25 @@ public class Operators {
             System.out.println("Good work");}
         else{
             System.out.println("Go turn off the water");
+        }*/
+       examGrade = 87;
+        if(examGrade <=100 && examGrade >=97){
+            System.out.println("A+");
+        }else if(examGrade <97 && examGrade >=94){
+            System.out.println("A");
+        }else if(examGrade <94 && examGrade >=90){
+            System.out.println("A-");
+        }else if(examGrade <90 && examGrade >=85){
+            System.out.println("B");
+        }else if(examGrade <85 && examGrade >=80){
+            System.out.println("B-");
+        }else if(examGrade <80 && examGrade >=70){
+            System.out.println("C");
+        }else if(examGrade <70){
+            System.out.println("F");
+        }else{
+            System.out.println("Grade not available.");
         }
 
-        }
-
- }
+ }}
 
