@@ -11,7 +11,8 @@ public class Main {
         calculateScore(true, 10000, 8, 200);
         anotherScore(true, 10000, 8, 200);
         numberLottery("George", 62);
-        tempConvertor(32.0, "C");
+        System.out.println(tempConvertor(32, "F"));
+
     }
 
     //I don't understand the step about the parameters going into here. did you want the values or just what i did?//
@@ -61,22 +62,26 @@ public class Main {
             System.out.println("Positive");
         } else if (testReturns < 0) {
             System.out.println("Negative");
-        } else {
+        } else if(testReturns==0){
             System.out.println("zero");
+        }else{
+            System.out.println("Error");
         }
     }
     public static double tempConvertor(double numbah, String typeTemp){
        double value;
         if(numbah<0.0) {
-            return -1.0;
+            return -1;
         }else if(!(typeTemp=="C" || typeTemp =="F")){
-            return -1.0;
-        }else if(numbah>0.0 && typeTemp =="C"){
+            return -1;
+        }else if(numbah>=0.0 && typeTemp =="C"){
              value = (double) ((numbah * 9/5)+32);
              return value;
-        }else{
+        }else if(numbah >=0 && typeTemp =="F"){
             value = (double) ((numbah-32)*5/9);
             return value;
+        }else{
+            return -1.0;
         }
     }
 

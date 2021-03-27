@@ -88,7 +88,7 @@ public class Operators {
         else{
             System.out.println("Go turn off the water");
         }*/
-       examGrade = 87;
+       examGrade = 40;
         if(examGrade <=100 && examGrade >=97){
             System.out.println("A+");
         }else if(examGrade <97 && examGrade >=94){
